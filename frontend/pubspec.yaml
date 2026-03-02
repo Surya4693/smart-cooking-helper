@@ -1,0 +1,71 @@
+name: smart_cooking_helper
+description: A smart cooking application with AI-powered recipe recommendations.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  provider: ^6.0.5
+  riverpod: ^2.5.1
+  flutter_riverpod: ^2.5.1
+
+  # Networking
+  http: ^1.2.0
+  dio: ^5.4.1
+  
+  # Firebase
+  firebase_core: any
+  firebase_auth: any
+  firebase_storage: any
+  cloud_firestore: any
+  google_sign_in: any
+
+  # Database
+  sqflite: ^2.3.2
+  path: ^1.9.0
+
+  # UI & Navigation
+  go_router: ^13.2.0
+  flutter_staggered_grid_view: ^0.7.0
+  cached_network_image: ^3.3.1
+  
+  # Camera & Image
+  camera: ^0.10.6
+  image_picker: any
+  image_cropper: any
+  js: any
+  
+  # Video
+  video_player: ^2.8.2
+  
+  # Audio & Text-to-Speech
+  flutter_tts: ^4.2.2
+  just_audio: ^0.9.36
+  
+  # Timer
+  timer_builder: ^2.0.0
+  
+  # Utilities
+  intl: ^0.19.0
+  uuid: ^4.0.0
+  shared_preferences: ^2.2.3
+  flutter_dotenv: ^5.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/
+    - .env
